@@ -24,6 +24,7 @@
   <!-- cssの読み込み -->
   <link rel="stylesheet" href="./css/sinage-search.css" />
   <link rel="stylesheet" href="css/contact.css">
+  <script src="https://ajaxzip3.github.io/ajaxzip3.js" charset="UTF-8"></script>
 </head>
 
 <body id="signage-search">
@@ -166,14 +167,15 @@
                 <th class="contact-item"><span>必須</span>郵便番号
                 </th>
                 <td class="contact-body">
-                  <input type="text" name="" id="" class="zipcode" placeholder="住所自動入力">
+                  <input type="text" name="zip11" size="10" maxlength="8" onKeyUp="AjaxZip3.zip2addr(this,'','addr11','addr11');" class="zipcode" placeholder="住所自動入力">
+                  
                 </td>
               </tr>
               <tr>
                 <th class="contact-item"><span>必須</span>住所
                 </th>
                 <td class="contact-body">
-                  <input type="text" name="" id="">
+                  <input type="text" name="addr11" size="60">
                 </td>
               </tr>
               <tr>
