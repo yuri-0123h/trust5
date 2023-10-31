@@ -569,7 +569,33 @@ textarea{
   .agreement{
     margin-bottom: 24px;
   }
-  
+  .start-date, .term, .contact-method{
+    flex-direction: column;
+  }
+  .radio{
+    width: 14px;
+  }
+  .start-date li, .term li{
+    width: 100%;
+  }
+  .radio-btn{
+    font-size: 1.4rem;
+  }
+  .radio-btn input{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 15px;
+    /* left: 0; */
+    margin:auto;
+  }
+  .radio-btn{
+    display:block;
+    padding-left: 2.6em;
+    /* padding-left: 1.4em; */
+    line-height: 50px;
+    /* border: 1px solid red; */
+  }
 }
 
 @media(max-width: 320px){
